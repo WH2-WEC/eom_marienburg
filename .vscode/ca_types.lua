@@ -322,6 +322,7 @@
 --# assume CA_SETTLEMENT.logical_position_y: method() --> number
 --# assume CA_SETTLEMENT.get_climate: method() --> string
 --# assume CA_SETTLEMENT.is_null_interface: method() --> boolean
+--# assume CA_SETTLEMENT.garrison_residence: method() --> CA_GARRISON_RESIDENCE
 --SLOT LIST
 --# assume CA_SLOT_LIST.num_items: method() --> number
 --# assume CA_SLOT_LIST.item_at: method(index: number) --> CA_SLOT
