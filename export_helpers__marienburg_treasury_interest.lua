@@ -1,7 +1,9 @@
-local marienburg_interest = {} --:{rate: number, cap: number}
-marienburg_interest.cap = 5000
-marienburg_interest.rate = (5/100)
-marienburg_interest.bundle_prefix = "sam_marienburg_interest_rate_"
+local marienburg_interest = {
+    cap = 5000,
+    rate = (5/100),
+    bundle_prefix = "sam_marienburg_interest_rate_"
+} --:{rate: number, cap: number, bundle_prefix: string}
+
 
 --v function(marienburg: CA_FACTION)
 local function marienburg_evaluate_interest(marienburg)

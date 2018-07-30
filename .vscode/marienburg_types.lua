@@ -1,4 +1,4 @@
---# assume global class MARIENBURG_MODEL
+--# assume global class MARIEN_MOD
 --# assume global class PLOT_MANAGER
 --# assume global class TECH_MANAGER
 --# assume global class SCRIPTED_TECH

@@ -392,6 +392,7 @@
 --# assume CA_FACTION.command_queue_index: method() --> CA_CQI
 --# assume CA_FACTION.is_null_interface: method() --> boolean
 --# assume CA_FACTION.faction_leader: method() --> CA_CHAR
+--# assume CA_FACTION.has_technology: method(tech: string) --> boolean
 
 -- FACTION LIST
 --# assume CA_FACTION_LIST.num_items: method() --> number

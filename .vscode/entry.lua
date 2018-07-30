@@ -1,2 +1,3 @@
 require("raw_script/marienburg_model")
-require("raw_script/technology_unlocks")
+require("export_helpers__marienburg_occupation_resistance")
+require("export_helpers__marienburg_treasury_interest")
