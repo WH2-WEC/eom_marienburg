@@ -317,12 +317,14 @@
 --# assume CA_REGION.building_exists: method(building: string) --> boolean
 --# assume CA_REGION.province_name: method() --> string
 
+
 -- SETTLEMENT
 --# assume CA_SETTLEMENT.logical_position_x: method() --> number
 --# assume CA_SETTLEMENT.logical_position_y: method() --> number
 --# assume CA_SETTLEMENT.get_climate: method() --> string
 --# assume CA_SETTLEMENT.is_null_interface: method() --> boolean
 --# assume CA_SETTLEMENT.garrison_residence: method() --> CA_GARRISON_RESIDENCE
+--# assume CA_SETTLEMENT.is_port: method() --> boolean
 --SLOT LIST
 --# assume CA_SLOT_LIST.num_items: method() --> number
 --# assume CA_SLOT_LIST.item_at: method(index: number) --> CA_SLOT
@@ -393,6 +395,7 @@
 --# assume CA_FACTION.is_null_interface: method() --> boolean
 --# assume CA_FACTION.faction_leader: method() --> CA_CHAR
 --# assume CA_FACTION.has_technology: method(tech: string) --> boolean
+--# assume CA_FACTION.factions_met: method() --> CA_FACTION_LIST
 
 -- FACTION LIST
 --# assume CA_FACTION_LIST.num_items: method() --> number

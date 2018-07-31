@@ -1,3 +1,6 @@
 require("mod/MarienburgMod")
 require("export_helpers__marienburg_occupation_resistance")
 require("export_helpers__marienburg_treasury_interest")
+require("export_helpers__marienburg_port_visibility")
+require("export_helpers__marienburg_monopoly")
+require("export_helpers__marienburg_mutual_protection")
