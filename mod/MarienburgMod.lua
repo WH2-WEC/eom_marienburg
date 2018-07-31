@@ -1,3 +1,8 @@
+MARIENBURG_TESTING_VAR = true --:boolean
+
+
+
+
 --Log script to text
 --v function(text: string | number | boolean | CA_CQI)
 local function MBLOG(text)
@@ -43,7 +48,6 @@ function marienburg_mod.init()
     setmetatable(self, {
         __index = marienburg_mod
     })--# assume self: MARIEN_MOD
-
 
     _G.marien = self
 end
