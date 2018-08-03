@@ -6,14 +6,11 @@ MARIENBURG_TESTING_VAR = true --:boolean
 --Log script to text
 --v function(text: string | number | boolean | CA_CQI)
 local function MBLOG(text)
-    local ftext = "GEOPOLITICS" 
-
     if not __write_output_to_logfile then
         return;
     end
 
     local logText = tostring(text)
-    local logContext = tostring(ftext)
     local logTimeStamp = os.date("%d, %m %Y %X")
     local popLog = io.open("warhammer_expanded_log.txt","a")
     --# assume logTimeStamp: string
@@ -74,8 +71,8 @@ function recruiter_manager.error_checker(self)
             --output("safeCall start");
             local status, result = pcall(func)
             if not status then
-                RCLOG(tostring(result), "ERROR CHECKER")
-                RCLOG(debug.traceback(), "ERROR CHECKER");
+                MBLOG(tostring(result), "ERROR CHECKER")
+                MBLOG(debug.traceback(), "ERROR CHECKER");
             end
             --output("safeCall end");
             return result;
@@ -198,12 +195,11 @@ function recruiter_manager.error_checker(self)
             )
         end
         core.add_listener = myAddListener;
-end
-
 
 end
 
 
+end
 
 
 
