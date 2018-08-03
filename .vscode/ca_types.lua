@@ -396,7 +396,7 @@
 --# assume CA_FACTION.faction_leader: method() --> CA_CHAR
 --# assume CA_FACTION.has_technology: method(tech: string) --> boolean
 --# assume CA_FACTION.factions_met: method() --> CA_FACTION_LIST
-
+--# assume CA_FACTION.factions_at_war_with: method() --> CA_FACTION_LIST
 -- FACTION LIST
 --# assume CA_FACTION_LIST.num_items: method() --> number
 --# assume CA_FACTION_LIST.item_at: method(index: number) --> CA_FACTION
