@@ -32,12 +32,10 @@ local function marienburg_evaluate_interest(marienburg)
         return
     end
     marien:log("old_bundle was ["..old_bundle.."] ")
-    if not old_bundle == interest_bundle then
         cm:remove_effect_bundle(old_bundle, marienburg:name())
         cm:apply_effect_bundle(interest_bundle, marienburg:name(), 0)
         cm:set_saved_value("sam_marienburg_interest", interest_bundle)
         marien:log("applied new interest bundle!")
-    end
 end
 
 
