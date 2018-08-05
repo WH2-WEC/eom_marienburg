@@ -245,6 +245,10 @@
 --# assume CM.scroll_camera_from_current: WHATEVER
 --# assume CM.treasury_mod: method(faction_key: string, quantity: number)
 --# assume CM.unlock_starting_general_recruitment: method(startpos: string, faction: string)
+--# assume CM.remove_restricted_building_level_record_for_faction: method(faction: string, building_key: string)
+--# assume CM.add_restricted_building_level_record_for_faction: method(faction: string, building_key: string)
+
+
 
 -- CAMPAIGN UI MANAGER
 --# assume CUIM.get_char_selected: method() --> string
