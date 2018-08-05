@@ -7,7 +7,7 @@ local OCCUPATION_RESISTANCE_BUILDING = "SAM_ADD"
 --v function () --> string
 local function get_occupation_resistance_level()
     local marienburg = cm:get_faction("wh_main_emp_marienburg")
-    if marienburg:has_effect_bundle(OCCUPATION_RESISTANCE_TECH_1) then
+    if marienburg:has_technology(OCCUPATION_RESISTANCE_TECH_1) then
         return "_1"
     else
         return "_2"
