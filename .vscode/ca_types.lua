@@ -406,6 +406,7 @@
 --# assume CA_FACTION.factions_met: method() --> CA_FACTION_LIST
 --# assume CA_FACTION.factions_at_war_with: method() --> CA_FACTION_LIST
 --# assume CA_FACTION.factions_trading_with: method() --> CA_FACTION_LIST
+--# assume CA_FACTION.factions_of_same_subculture: method() --> CA_FACTION_LIST
 --# assume CA_FACTION.trade_value: method() --> number
 
 
