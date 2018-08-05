@@ -30,7 +30,7 @@
 --# assume global class CA_PENDING_BATTLE
 --# assume global class CA_UNIT
 --# assume global class CA_UNIT_LIST
-
+--# assume global class CAMPAIGN_UI
 --# assume global class CORE
 --# assume global class _G
 
@@ -102,6 +102,10 @@
 --# assume CA_UIC.ResizeTextResizingComponentToInitialSize: method(width: number, height: number)
 --# assume CA_UIC.SimulateLClick: method()
 --# assume CA_UIC.SimulateKey: method(keyString: string)
+
+--CampaignUI
+--# assume CAMPAIGN_UI.TriggerCampaignScriptEvent: function(cqi: CA_CQI, event: string)
+
 
 
 -- CAMPAIGN MANAGER
@@ -513,3 +517,4 @@
 --# assume global mission_manager: MISSION_MANAGER
 --# assume global rite_unlock: RITE_UNLOCK
 --# assume global ll_unlock: LL_UNLOCK
+--# assume global CampaignUI: CAMPAIGN_UI
