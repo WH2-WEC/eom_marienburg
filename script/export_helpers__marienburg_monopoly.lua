@@ -1,5 +1,5 @@
-SAM_MARIENBURG_MONOPOLY_TECH = "SAM_ADD" --:string
-SAM_MONOPOLY_BUNDLE_PREFIX = "SAM_ADD"
+SAM_MARIENBURG_MONOPOLY_TECH = "tech_Marien_Merchant_3b" --:string
+SAM_MONOPOLY_BUNDLE_PREFIX = "marien_trade_resource_mechanic"
 
 
 
