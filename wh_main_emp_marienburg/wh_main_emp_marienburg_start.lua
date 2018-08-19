@@ -2,10 +2,8 @@ cm:set_saved_value("Sam_Marienburg", true);
 
 
 
---kill_character_and_commanded_unit
---kill_character
 function mb_replace_with_ll()
-	
+    cm:disable_event_feed_events(true, "", "wh_event_subcategory_character_deaths", "");
 	startmarienburgarmy = "Ersatzsolder_SwSh,Ersatzsolder_SwSh,Ersatzsolder_Sp,Ersatzsolder_Sp,Raubritter,Bergjaeger,wh_main_emp_art_mortar"
 
                 cm:create_force_with_general(
@@ -37,9 +35,12 @@ function mb_replace_with_ll()
                 cm.game_interface:kill_character_and_commanded_unit("faction:wh_main_emp_marienburg,forename:2147344088", true, true)
                 cm:set_character_immortality("faction:wh_main_emp_marienburg,forename:991028", false)
                 cm.game_interface:kill_character_and_commanded_unit("faction:wh_main_emp_marienburg,forename:991028", true, true)
-
-    
-
+    if cm:get_faction("wh_main_emp_marienburg"):is_human() then
+        cm:force_make_peace("wh_main_emp_marienburg", "wh_main_brt_bretonnia")
+        cm:force_declare_war("wh_main_emp_nordland", "wh_main_emp_marienburg", false, false)
+        cm:force_declare_war("wh_main_brt_artois", "wh_main_emp_marienburg", false, false)
+    end
+    cm:callback(function() cm:disable_event_feed_events(false, "", "wh_event_subcategory_character_deaths", "") end, 1);
 end;
 
 local agent_subtype_key = "emp_marienburg"; -- character subtype_key here
