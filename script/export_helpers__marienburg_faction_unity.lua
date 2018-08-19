@@ -1,18 +1,54 @@
 SAM_MARIENBURG_EMP_POINT_THRESHOLD = 40
 SAM_MARIENBURG_BRET_POINT_THRESHOLD = 30
 
-SAM_MARIENBURG_BRETONIA_UNITY_BUNDLE = "SAM_ADD"
-SAM_MARIENBURG_EMPIRE_UNITY_BUNDLE = "SAM_ADD"
+SAM_MARIENBURG_BRETONIA_UNITY_BUNDLE = "marien_bretonnia_unity"
+SAM_MARIENBURG_EMPIRE_UNITY_BUNDLE = "marien_empire_unity"
 
-SAM_MARIENBURG_UNITY_REDUCTION_TECH_KEY = "SAM_ADD"
+SAM_MARIENBURG_UNITY_REDUCTION_TECH_KEY = "tech_Marien_Diplomacy_3a"
 SAM_MARIENBURG_POST_TECH_UNITY_SUCCESS_CHANCE = 35
 
 SAM_MARIENBURG_BATTLE_VALUE = 1
 SAM_MARIENBURG_SETTLEMENT_EMPIRE_VALUES = {
-
+        ["wh_main_ostland_castle_von_rauken"] = 2,
+        ["wh_main_ostland_norden"] = 2,
+        ["wh_main_ostland_wolfenburg"] = 2,
+        ["wh_main_reikland_altdorf"] = 20,
+        ["wh_main_reikland_eilhart"] = 2,
+        ["wh_main_reikland_grunburg"] = 2,
+        ["wh_main_reikland_helmgart"] = 2,
+        ["wh_main_stirland_the_moot"] = 2,
+        ["wh_main_stirland_wurtbad"] = 2,
+        ["wh_main_talabecland_kemperbad"] = 2,
+        ["wh_main_wissenland_nuln"] = 2,
+        ["wh_main_wissenland_pfeildorf"] = 2,
+        ["wh_main_wissenland_wissenburg"] = 2,
+        ["wh_main_hochland_brass_keep"] = 2,
+        ["wh_main_hochland_hergig"] = 2,
+        ["wh_main_middenland_carroburg"] = 2,
+        ["wh_main_middenland_middenheim"] = 15,
+        ["wh_main_middenland_weismund"] = 2,
+        ["wh_main_nordland_dietershafen"] = 2,
+        ["wh_main_nordland_salzenmund"] = 2,
+        ["wh_main_talabecland_talabheim"] = 2,
+        ["wh_main_averland_averheim"] = 2,
+        ["wh_main_averland_grenzstadt"] = 2,
+        ["wh_main_ostermark_bechafen"] = 2,
+        ["wh_main_ostermark_essen"] = 2
     }--:map<string, number>
 SAM_MARIENBURG_SETTLEMENT_BRET_VALUES = {
-
+        ["wh_main_bastonne_et_montfort_castle_bastonne"] = 2,
+        ["wh_main_bastonne_et_montfort_montfort"] = 2,
+        ["wh_main_bordeleaux_et_aquitaine_aquitaine"] = 2,
+        ["wh_main_bordeleaux_et_aquitaine_bordeleaux"] = 2,
+        ["wh_main_carcassone_et_brionne_brionne"] = 2,
+        ["wh_main_carcassone_et_brionne_castle_carcassonne"] = 2,
+        ["wh_main_couronne_et_languille_couronne"] = 15,
+        ["wh_main_couronne_et_languille_languille"] = 2,
+        ["wh_main_forest_of_arden_castle_artois"] = 2,
+        ["wh_main_forest_of_arden_gisoreux"] = 2,
+        ["wh_main_lyonesse_lyonesse"] = 2,
+        ["wh_main_parravon_et_quenelles_parravon"] = 2,
+        ["wh_main_parravon_et_quenelles_quenelles"] = 2
     }--:map<string, number>
 if cm:get_saved_value("SAM_MARIENBURG_UNITY_BRET") == nil or cm:get_saved_value("SAM_MARIENBURG_UNITY_EMP") == nil then
     cm:set_saved_value("SAM_MARIENBURG_UNITY_BRET", 0)
