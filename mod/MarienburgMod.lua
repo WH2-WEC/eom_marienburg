@@ -63,7 +63,7 @@ function marienburg_mod.error_check(self)
 --logs lua errors to a file after this is called.
 --v [NO_CHECK] 
 --v function (self: RECRUITER_MANAGER)
-function recruiter_manager.error_checker(self)
+function marienburg_mod.error_checker(self)
   --Vanish's PCaller
     --All credits to vanish
     --v function(func: function) --> any
