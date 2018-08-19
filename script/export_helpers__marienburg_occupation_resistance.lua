@@ -1,6 +1,6 @@
-local OCCUPATION_BUNDLE_PREFIX = "SAM_ADD"
-local OCCUPATION_RESISTANCE_TECH_1 = "SAM_ADD"
-local OCCUPATION_RESISTANCE_BUILDING = "SAM_ADD"
+local OCCUPATION_BUNDLE_PREFIX = "marien_occupation_penalty"
+local OCCUPATION_RESISTANCE_TECH_1 = "tech_Marien_Occupation_1"
+local OCCUPATION_RESISTANCE_BUILDING = "Marien_Occupation"
 
 
 
@@ -41,7 +41,20 @@ local function should_province_resist(region)
         ["wh_main_averland_averheim"] = 2,
         ["wh_main_averland_grenzstadt"] = 1,
         ["wh_main_ostermark_bechafen"] = 2,
-        ["wh_main_ostermark_essen"] = 1
+        ["wh_main_ostermark_essen"] = 1,
+        ["wh_main_bastonne_et_montfort_castle_bastonne"] = 1,
+        ["wh_main_bastonne_et_montfort_montfort"] = 1,
+        ["wh_main_bordeleaux_et_aquitaine_aquitaine"] = 1,
+        ["wh_main_bordeleaux_et_aquitaine_bordeleaux"] = 1,
+        ["wh_main_carcassone_et_brionne_brionne"] = 1,
+        ["wh_main_carcassone_et_brionne_castle_carcassonne"] = 1,
+        ["wh_main_couronne_et_languille_couronne"] = 1,
+        ["wh_main_couronne_et_languille_languille"] = 1,
+        ["wh_main_forest_of_arden_castle_artois"] = 1,
+        ["wh_main_forest_of_arden_gisoreux"] = 1,
+        ["wh_main_lyonesse_lyonesse"] = 1,
+        ["wh_main_parravon_et_quenelles_parravon"] = 1,
+        ["wh_main_parravon_et_quenelles_quenelles"] = 1
     }--:map<string, number>
     if restricted_regions[region] == nil then
         return false
