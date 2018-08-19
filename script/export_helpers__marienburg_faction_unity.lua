@@ -143,6 +143,13 @@ core:add_listener(
                 local others = leader:factions_of_same_subculture()
                 cm:apply_effect_bundle(SAM_MARIENBURG_BRETONIA_UNITY_BUNDLE, leader:name(), 20)
                 cm:set_saved_value("SAM_MARIENBURG_BRET_UNITY_OCCURED", true)
+                cm:show_message_event(
+                    "wh_main_emp_marienburg",
+                    "event_feed_strings_text_marienburg_unity_bret_title",
+                    "event_feed_strings_text_marienburg_unity_bret_sub",
+                    "event_feed_strings_text_marienburg_unity_bret_desc",
+                    true,
+                    591)
                 for i = 0, others:num_items() - 1 do
                     local current = others:item_at(i)
                     if cm:get_faction("wh_main_emp_marienburg"):has_technology(SAM_MARIENBURG_UNITY_REDUCTION_TECH_KEY) then
@@ -162,6 +169,13 @@ core:add_listener(
                 local others = leader:factions_of_same_subculture()
                 cm:apply_effect_bundle(SAM_MARIENBURG_EMPIRE_UNITY_BUNDLE, leader:name(), 20)
                 cm:set_saved_value("SAM_MARIENBURG_EMP_UNITY_OCCURED", true)
+                cm:show_message_event(
+                    "wh_main_emp_marienburg",
+                    "event_feed_strings_text_marienburg_unity_emp_title",
+                    "event_feed_strings_text_marienburg_unity_emp_sub",
+                    "event_feed_strings_text_marienburg_unity_emp_desc",
+                    true,
+                    591)
                 for i = 0, others:num_items() - 1 do
                     local current = others:item_at(i)
                     if cm:get_faction("wh_main_emp_marienburg"):has_technology(SAM_MARIENBURG_UNITY_REDUCTION_TECH_KEY) then
