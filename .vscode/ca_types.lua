@@ -110,6 +110,7 @@
 
 -- CAMPAIGN MANAGER
 --# assume CM.get_game_interface: method() --> CA_GAME
+--# assume CM.game_interface: CA_GAME
 --# assume CM.model: method() --> CA_MODEL
 --# assume CM.is_multiplayer: method() --> boolean
 --# assume CM.get_local_faction: method(force: boolean?) --> string
@@ -237,6 +238,7 @@
 --# assume CM.kill_all_armies_for_faction: method(factionName: CA_FACTION)
 --# assume CM.get_highest_ranked_general_for_faction: method(faction_key: string) --> CA_CHAR
 --# assume CM.force_add_and_equip_ancillary: method(lookup: string, ancillary: string)
+--# assume CM.force_add_ancillary: method(lookup: string, ancillary: string)
 --# assume CM.trigger_dilemma: method(faction_key: string, dilemma_key: string, trigger_immediately: boolean)
 --# assume CM.force_diplomacy:  method(faction: string, other_faction: string, record: string, offer: boolean, accept: boolean, enable_payments: boolean)
 --# assume CM.override_building_chain_display: method(building_chain: string, settlement_skin: string)
@@ -261,7 +263,7 @@
 
 -- GAME INTERFACE
 --# assume CA_GAME.filesystem_lookup: method(filePath: string, matchRegex:string) --> string
-
+--# assume CA_GAME.kill_character_and_commanded_unit: method(lookup: string, kill_army: boolean, cq: boolean)
 
 -- CHARACTER
 --# assume CA_CHAR.has_trait: method(traitName: string) --> boolean

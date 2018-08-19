@@ -1,4 +1,5 @@
 require("mod/MarienburgMod")
+require("wh_main_emp_marienburg/wh_main_emp_marienburg_start")
 require("script/export_helpers__marienburg_occupation_resistance")
 require("script/export_helpers__marienburg_treasury_interest")
 require("script/export_helpers__marienburg_port_visibility")
